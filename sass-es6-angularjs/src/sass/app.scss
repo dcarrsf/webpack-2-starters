@@ -1,0 +1,45 @@
+@import "./modules/flex";
+@import "./modules/layout";
+@import "./modules/colors";
+@import "./modules/fonts";
+@import "./vendor/grid";
+
+* {
+  /* Defaults: */
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 50px;
+  font-family: $p-font;
+  background-color: $color-body;
+}
+
+h1 {
+  font-family: $h-font;
+  letter-spacing: $h-letter-spacing;
+  font-weight: $h-weight;
+  font-size: $h-size;
+}
+
+p {
+  font-family: $p-font;
+  letter-spacing: $p-letter-spacing;
+  line-height: $p-line-height;
+  font-weight: $p-weight;
+  font-size: $p-size;
+}
+
+// ------------------
+// MANIFEST
+
+/* Directives: */
+@import "./partials/Foo.scss";
+@import "./partials/Bar.scss";
+@import "./partials/FooBar.scss";

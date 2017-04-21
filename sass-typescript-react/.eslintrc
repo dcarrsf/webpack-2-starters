@@ -1,0 +1,30 @@
+extends:
+  eslint-config-airbnb
+
+parser:
+  typescript-eslint-parser
+
+settings:
+  typescript: 2
+
+ecmaFeatures:
+  jsx: false
+  modules: true
+  destructuring: true
+  classes: true
+  forOf: true
+  blockBindings: true
+  arrowFunctions: true
+
+env:
+  browser: true
+
+rules:
+  indent: 2
+  func-style: 0
+  func-names: 0
+  comma-dangle: 0
+  no-console: 0
+  no-param-reassign: 0
+  arrow-body-style: 0
+  no-unused-vars: 0

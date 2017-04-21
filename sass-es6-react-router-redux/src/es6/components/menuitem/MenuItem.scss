@@ -1,0 +1,35 @@
+/* -------------- Foo Component --------------
+* BLOCK:
+* .menu-item
+* ELEMENT:
+* MODIFIER:
+* .menuItem--active
+* .menuItem--normal
+* -------------- Variables -------------------
+*/
+.menuItem {
+  display: inline-block;
+
+  /* Link -> a (react-router) */
+  a {
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    padding: 14px 0;
+    font-size: 24px;
+    border-right: 2px solid lightgray;
+    display: block;
+  }
+
+  /* Selected */
+  .active {
+    color: white;
+    background-color: gray;
+  }
+
+  /* Unselected */
+  .normal {
+    color: gray;
+    background-color: white;
+  }
+}

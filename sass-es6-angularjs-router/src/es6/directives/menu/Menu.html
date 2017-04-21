@@ -1,0 +1,8 @@
+<nav class='menu'>
+  <ul class='menu__list'>
+    <li ng-repeat='item in items track by $index' style='width: {{100/items.length}}%'>
+      <a ng-if='item.selected' class='active card' href='{{item.route}}'>{{item.label}}</a>
+      <a ng-if='!item.selected' class='normal card' href='{{item.route}}'>{{item.label}}</a>
+    </li>
+  </ul>
+</nav>

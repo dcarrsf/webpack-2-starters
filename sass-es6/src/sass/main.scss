@@ -1,0 +1,26 @@
+/**
+ * *******************************************************
+ *
+ *  The main.scss file binds the SASS components and modules (bundling entry point).
+ *
+ *  @author     Dan Carr
+ *  @date       February 2017
+ *
+ * *******************************************************
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+// ------------------
+// MANIFEST
+
+/* Components: */
+@import "../es6/components/Hello.scss";

@@ -1,0 +1,40 @@
+{
+  "name": "webpack2-typescript-react",
+  "version": "1.0.0",
+  "description": "Boilerplate for Webpack 2, TypeScript, and React.",
+  "main": "index.js",
+  "scripts": {
+    "dev:hot": "webpack-dev-server --config ./webpack/config.hot.js --inline --hot --no-info",
+    "dev:watch": "webpack --watch --config ./webpack/config.dev.js --progress --colors",
+    "dev": "webpack --config ./webpack/config.dev.js --progress --colors",
+    "build": "webpack --config ./webpack/config.prod.js --progress --colors --optimize-minimize"
+  },
+  "dependencies": {
+    "@types/react": "^15.0.10",
+    "@types/react-dom": "^0.14.23",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.0.4-rc.2",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.5",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.0",
+    "source-map-loader": "^0.1.6",
+    "style-loader": "^0.13.1",
+    "typescript": "^2.1.6",
+    "typescript-eslint-parser": "^1.0.3",
+    "uglifyjs-webpack-plugin": "^0.1.4",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  },
+  "license": "ISC",
+  "author": "Dan Carr"
+}
